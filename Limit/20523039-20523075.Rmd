@@ -1,0 +1,26 @@
+---
+title: "Limit with R"
+author: "haifan"
+date: "4/13/2021"
+output: html_document
+---
+
+```{r}
+x = Sym("x")
+Limit(8 - 3*x + 12*(x^2), x, 2)
+```
+
+```{r}
+x = Sym("x")
+Limit((x^2 + 5*x + 10)/(3*(x^2) − 6*x − 2), x, Infinity)
+```
+
+```{r}
+h = Sym("h")
+Limit(((6 + h)^2 − 36)/h, h, 0)
+```
+
+```{r}
+x = Sym("x")
+Limit(x/(3 − sqrt(x + 9)), x, 0)
+```
